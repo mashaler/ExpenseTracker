@@ -20,6 +20,8 @@ struct ContentView: View {
                 //MARK: notification Icon
                 ToolbarItem {
                      Image(systemName: "bell.badge")
+                        .symbolRenderingMode(.palette)
+                        .foregroundStyle(Color.icon, .primary)
                 }
             }
         }
